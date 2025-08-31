@@ -1,3 +1,22 @@
+"""
+EXPENSE TRACKER — SIMPLE EXPLANATION
+
+WHAT THIS PROGRAM DOES:
+Tracks simple expenses from the command line and saves them to a CSV file.
+
+HOW TO USE (examples):
+    python expense.py add Food 12.5
+    python expense.py list
+
+HOW IT WORKS (step-by-step):
+1) "add <category> <amount>" → appends a new row [category, amount] to expenses.csv.
+2) "list" → reads expenses.csv, prints each line, and sums the total.
+
+WHAT I SHOULD NOTICE:
+- CSV is easy to read and edit later in Excel/Google Sheets.
+- I’m practicing file I/O (reading and writing files) and basic parsing of command-line inputs.
+"""
+
 import json, sys, os
 
 FILE = "tasks.json"
